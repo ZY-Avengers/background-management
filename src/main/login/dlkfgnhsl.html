@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理后台登录</title>
+</head>
+<body class="bg">
+<div class="full_container reglog">
+    <h1>管理后台登录</h1>
+    <div class="clearfix">
+        <div class="l reglogForm">
+            <form class="login_from" id="login-fm">
+
+                <div class="m-row">
+                    <label class="l m-rowLabel" for="username">用户名：</label>
+                    <div class="l m-holderBox">
+                        <input class="m-holderInput m-textFocus png" id="username" name="username" type="text"
+                               placeholder="请输入用户名">
+                    </div>
+                </div>
+
+                <div class="m-row">
+                    <label class="l m-rowLabel" for="password">密码：</label>
+                    <div class="l m-holderBox">
+                        <input class="m-holderInput m-textFocus png" name="password" id="password" type="password"
+                               autoComplete='off' placeholder="请输入密码">
+                    </div>
+                </div>
+
+                <div class="m-row">
+                    <input class="login" id="login-btn" type="button" onclick="login()" value="立即登录"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js" async></script>
+    <script src="../../../js/jquery-2.0.0.js" async></script>
+</div>
+</body>
+</html>
