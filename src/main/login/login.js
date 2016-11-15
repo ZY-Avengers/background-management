@@ -1,6 +1,14 @@
-/**
- * Created by Administrator on 2016/11/14.
- */
+
+
+$(document).ready(
+    function () {
+        $("button").click(
+            function () {
+                $("h1").hide();
+            }
+        );
+    }
+);
 
 function login() {
 
@@ -13,11 +21,11 @@ function login() {
     $.ajax(
         {
             type: "POST",
-            url: "https://www.baidu.com",
+            url: "",
             contentType: "application/json;charset=utf-8",
             data: JSON.stringify(logJson),
             dataType: "json",
 
         }
-    )
+    );
 }

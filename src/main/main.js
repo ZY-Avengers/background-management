@@ -15,5 +15,5 @@ $(document).ready(function () {
             $(this).removeClass('inactives');
             $(this).siblings('ul').slideUp(100);
         }
-    })
-})
+    });
+});
