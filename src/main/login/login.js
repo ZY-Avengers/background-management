@@ -1,11 +1,5 @@
-
-
-$(document).ready(
-    function () {
-        $("button").click(
-            function () {
-                $("h1").hide();
-            }
+$(document).ready(function () {
+        $("button").click(login()
         );
     }
 );
@@ -16,12 +10,10 @@ function login() {
     var password = document.getElementById("password").firstElementChild;
 
     var logJson = {username: username, password: password};
-
-
     $.ajax(
         {
             type: "POST",
-            url: "",
+            url: "https://www.baidu.com",
             contentType: "application/json;charset=utf-8",
             data: JSON.stringify(logJson),
             dataType: "json",
