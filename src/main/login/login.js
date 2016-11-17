@@ -1,14 +1,10 @@
-$(document).ready(function () {
-        $("button").click(login()
-        );
-    }
-);
+// $(document).ready(function () {
+//         $("button").click(login()
+//         );
+//     }
+// );
 
-function login() {
-
-    var username = document.getElementById("username").firstElementChild;
-    var password = document.getElementById("password").firstElementChild;
-
+var Login=function (username,password) {
     var logJson = {username: username, password: password};
     $.ajax(
         {

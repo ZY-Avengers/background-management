@@ -9,7 +9,7 @@
     <h1>管理后台登录</h1>
     <div class="clearfix">
         <div class="l reglogForm">
-            <form class="login_from" id="login-fm">
+            <form class="login_from" id="login-fm" onsubmit="return login(this)">
 
                 <div class="m-row">
                     <label class="l m-rowLabel" for="username">用户名：</label>
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="m-row">
-                    <button class="login" id="login-btn">立即登录</button>
+                    <button class="login" id="login-btn" type="submit">立即登录</button>
                 </div>
             </form>
         </div>
@@ -37,5 +37,13 @@
 </div>
 <script src="../../../js/jquery-2.0.0.js"></script>
 <script src="login.js"></script>
+<script>
+    function login(form) {
+        var username = form[0].value;
+        var password = form[1].value;
+        Login(username, password);
+        return false;
+    }
+</script>
 </body>
 </html>
